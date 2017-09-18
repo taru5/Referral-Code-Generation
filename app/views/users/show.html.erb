@@ -1,0 +1,17 @@
+
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <p class="text-capitalize"><%= @user.name %></p>
+</p>
+
+<p>
+  <strong>Referral code:</strong>
+  <p class="text-capitalize"><%= @user.referral_code %></p>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user), class:'btn btn-default' %> 
+<%= link_to 'Back', users_path, class:'btn btn-default' %>
+</div>
